@@ -1,97 +1,126 @@
+/* =========================================================
+   INFO 290 — Spring 2026
+   style.css (Bootstrap 3.x)
+   ========================================================= */
+/* ---------- Page layout ---------- */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+padding-top: 70px;            /* required for .navbar-fixed-top */
+padding-bottom: 20px;
 }
-
 .navbar {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
-
+/* ---------- Tables ---------- */
+table.plan {
+width: 100%;
+}
 td, th {
-  padding: 5px 10px;
+padding: 5px 10px;
 }
-
 td.side-borders {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+border-left: 1px solid #000;
+border-right: 1px solid #000;
 }
-
 .plan td {
-  border-bottom: 1px solid #444;
+border-bottom: 1px solid #444;
 }
-
+/* ---------- Typography helpers ---------- */
 span.not-required {
-  color: #B0B0B0;
-  font-style: bold;
-
+color: #B0B0B0;
+font-weight: bold;
 }
 span.paper-header {
-  color: #2A70E8;
-  font-style: bold;
-  font-size: 14pt;
+color: #2A70E8;
+font-weight: bold;
+font-size: 14pt;
 }
-
 span.section-header {
-  color: #3f3f3f;
-  text-transform: uppercase;
-  font-style: bold;
-  font-size: 20pt;
+color: #3f3f3f;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 20pt;
 }
 h1.TitleHeader {
-  color: #FFFFFF;
-  background-color: #000000;
-  font-style: bold;
-  font-size: 30pt;
-
+color: #FFFFFF;
+background-color: #000000;
+font-weight: bold;
+font-size: 30pt;
 }
-
 td.section-header {
-  color: #FFFFFF;
-  background-color: #3f3f3f;
-  font-style: bold;
-  font-size: 20pt;
+color: #FFFFFF;
+background-color: #3f3f3f;
+font-weight: bold;
+font-size: 20pt;
 }
-
 td.small-section-header {
-  background-color: #000000;
-  color: #FFFFFF
+background-color: #e8e8e8;
+color: #333333;
 }
 td.small-comment-header {
-  background-color: rgba(0,0,0,0.5);
-  color: #FFFFFF
+background-color: rgba(0,0,0,0.5);
+color: #FFFFFF;
 }
 tr.exam {
-  background-color: rgba(0,128,128,0.5);
-  color: #FFFFFF
+background-color: rgba(0,128,128,0.5);
+color: #FFFFFF;
 }
-
-a.nav {
-  color: rgb(255,255,255);
-}
-a.nav:hover {
-  color: rgba(255,0,0,0.9);
-}
-a.lecturelink {
-  color: rgb(255,0,0);
-}
-a.lecturelink:hover {
-  color: rgb(0,0,255);
-}
-
 tr.flipped {
-  background-color: rgba(255,0,0,0.3);
+background-color: rgba(255,0,0,0.3);
 }
 tr.guest {
-  background-color: rgba(0,255,0,0.3);
+background-color: rgba(0,255,0,0.3);
 }
 span.theory {
-  color: #CF0000;
-  font-style: bold;
+color: #CF0000;
+font-weight: bold;
 }
-
-
 p.comment {
-  color: #B0B0B0;
-  font-style: italic;
-  font-size: 10pt;
+color: #B0B0B0;
+font-style: italic;
+font-size: 10pt;
+}
+/* ---------- Links ---------- */
+a.nav {
+color: rgb(255,255,255);
+}
+a.nav:hover {
+color: rgba(255,0,0,0.9);
+}
+a.lecturelink {
+color: rgb(255,0,0);
+}
+a.lecturelink:hover {
+color: rgb(0,0,255);
+}
+/* ---------- Instructional team photos/table ---------- */
+.team-photo {
+height: 200px;
+width: 200px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 6px;
+}
+/* Remove borders from instructional team table */
+#instructional_team table,
+#instructional_team th,
+#instructional_team td {
+border: none !important;
+}
+/* ---------- Jumbotron ---------- */
+.jumbotron {
+text-align: left;
+padding: 30px;
+margin-top: 0;                /* helps line up with the rest of the content */
+}
+.jumbotron h1 {
+font-size: 52px;
+line-height: 1.2;
+}
+.small-section-header {
+background-color: #f5f5f5;   /* light neutral gray */
+color: #333333;
+font-weight: 600;
+letter-spacing: 0.5px;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
 }

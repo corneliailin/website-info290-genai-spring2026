@@ -1,553 +1,558 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>INFO 290: Fundamentals of Generative AI (Spring 2026)</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" href="./style.css">
 </head>
 
+<body>
 
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
 
-<div class="container">
-  <div class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Info290</a>
-      </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#description">Description</a></li>
+        <li><a href="#announcements">Announcements</a></li>
+        <li><a href="#instructional-team">Instructional Team</a></li>
+        <li><a href="#lecture">Weekly Schedule</a></li>
+        <li><a href="#grading">Grading</a></li>
 
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            Policies <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#ai-policy">Use of AI Chatbots</a></li>
+            <li><a href="#integrity">Academic Integrity</a></li>
+            <li><a href="#diversity">Diversity &amp; Inclusion</a></li>
+            <li><a href="#dsp">Accommodations</a></li>
+            <li><a href="#wellness">Wellness</a></li>
+          </ul>
+        </li>
 
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#description">Description</a></li>
-              <li><a href="#announcements">Announcements</a></li>
-              <li><a href="#logistics">Class Logistics</a></li>
-              <li><a href="#lecture">Lecture Plan</a></li>    
-              <li class="divider"></li>
-	      <li><a href="#grading">Grading</a></li>
-              <li class="divider"></li>    
-            </ul>
-		  
-          </li>
-          <li><a href="#project-submissions">Assignments and Final Project Submission Guidelines</a></li>    
-	  <li><a href="https://learn.datascience.berkeley.edu/">bCourses</a></li>
-        </ul>
-	      
-      </div>
+        <li><a href="https://edstem.org" target="_blank">Ed Discussion</a></li>
+      </ul>
     </div>
   </div>
-
-	
-<div class="jumbotron">
-<h1>Info 290: </br>
-    Fundamentals of Generative AI</h1>
-<h3> Lecture: Thu, 11am - 2pm PST</h3>
-<h3> Office hours: Wed, 11am - 12pm PST</h3>	
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">Description</div>
+<div class="container">
+
+
+    <div class="jumbotron">
+      <h1>Info 290:<br>Fundamentals of Generative AI</h1>
+      <h3>Lecture: Thursdays, 11am - 2pm PST, South Hall, room: TBD</h3>
+      <!-- <h3>Office hours: Wed, 11am - 12pm PST</h3> -->
+    </div>
+
+    <div class="panel panel-default" id="description">
+      <div class="panel-heading">Description</div>
+      <div class="panel-body">
+        <p>This course provides a foundation in the principles, architectures, and applications of generative artificial intelligence (GenAI).
+          It explores how large language models (LLMs) work by guiding students through the complete model lifecycle: from core building blocks like
+          embedding representations, attention mechanisms, and transformer architectures to adaptation techniques including in-context learning,
+          prompt tuning, parameter-efficient fine-tuning (PEFT), and reinforcement learning from human feedback (RLHF).</p>
+
+        <p>The course also explores advanced topics such as retrieval-augmented generation (RAG), agentic reasoning systems, and multimodal learning
+          that extends beyond text to incorporate vision and other data modalities.</p>
+
+        <p>Programming assignments, paper readings, and a team-based final project will help students develop the technical proficiency to design,
+          implement, and evaluate GenAI pipelines using Hugging Face, LangChain, and other open-source LLM APIs, while critically assessing their capabilities,
+          limitations, and responsible use in real-world applications.</p>
+
+        <p>All materials for this course will be posted on this page.</p>
+      </div>
+    </div>
+
+        <div class="panel panel-default" id="announcements">
+      <div class="panel-heading">Announcements</div>
+      <div class="panel-body">
+        <ul>
+          <li>ADD HERE</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default" id="instructional-team">
+      <div class="panel-heading">Instructional Team</div>
+      <div class="panel-body">
+        <div id="instructional_team">
+          <table class="table">
+            <thead>
+              <tr><th></th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width:170px; text-align:center;">
+                  <img src="./pictures/cornelia.jpeg" class="team-photo" alt="Cornelia Paulik"><br>
+                  <strong><a href="http://corneliailin.github.io">Cornelia Paulik</a></strong><br>
+                  <em>Instructor</em><br>
+                  Office Hours (online only):<br>
+                  Wed 11 - 12 PM PST<br>
+                  <a href="https://berkeley.zoom.us/my/cornelia.paulik" target="_blank">Join Zoom</a><br>
+                  cornelia.paulik @ ischool.berkeley.edu
+                </td>
+
+                <td style="width:170px; text-align:center;">
+                  <img src="./pictures/andrew.jpeg" class="team-photo" alt="Andrew Akuaku"><br>
+                  <strong><a href="https://www.ischool.berkeley.edu/people/andrew-akuaku">Andrew Akuaku</a></strong><br>
+                  <em>Reader</em><br>
+                  Office Hours:<br>
+                  TBD<br>
+                  aakuaku @ ischool.berkeley.edu
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- /#instructional_team -->
+      </div> <!-- /.panel-body -->
+    </div> <!-- /.panel -->
+
+
+
+<div class="panel panel-default" id="logistics">
+  <div class="panel-heading">Class Logistics</div>
   <div class="panel-body">
-    <a name="description"></a>
-	<p>This course provides a foundation in the principles, architectures, and applications of generative artificial intelligence (GenAI). 
-		It explores how large language models (LLMs) work by guiding students through the complete model lifecycle: from core building blocks like
-		embedding representations, attention mechanisms, and transformer architectures to adaptation techniques including in-context learning,
-		instruction tuning, parameter-efficient fine-tuning (PEFT), and reinforcement learning from human feedback (RLHF). </p>
-	<p>The course also explores advanced topics such as retrieval-augmented generation (RAG), agentic reasoning systems, and multimodal learning
-		that extends beyond text to incorporate vision and other data modalities. </p>
-	<p> Programming assignments, research paper readings, and a team-based final project will help students develop the technical proficiency to design,
-		implement, and evaluate GenAI pipelines using Hugging Face, LangChain, and other open-source LLM APIs, while critically assessing their capabilities,
-		limitations, and responsible use in real-world applications.</p>
-	<p> All materials for this course are posted on this page.</p>
-	  
-  </div>
-</div>
 
-
-	<div class="panel panel-default">
-  <div class="panel-heading">Instructional Team</div>
-  <div class="panel-body">
-    <a name="instructional_team"></a>
-    <table class="table">
-      <thead>
-        <tr><th></th><th></th></tr>
-      </thead>
-      <tbody>
-        <tr><td width = 4%><img src="./pictures/Cornelia.jpg" style="height:62"></td><td><a href="http://corneliailin.github.io">Cornelia Paulik</a> (cornelia.paulik @ ischool.berkeley.edu)</td></tr>
-        <tr><td width="4%"><img src="./pictures/Andrew.jpg" style="height:62"></td><td><a href="https://www.ischool.berkeley.edu/people/andrew-akuaku">Andrew Akuaku</a> (aakuaku@ischool.berkeley.edu)</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">Announcements</div>
-  <div class="panel-body">
-    <a name="announcements"></a>
+    <b>Students are expected to have:</b>
     <ul>
-      <li> Please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0CPATHn3SzRAVCGFfy3S1-5EeDJwxEBa8D67egYMsdbnvA/viewform">PRE-COURSE survey</a> so I can get to know a bit more about you and your programming background.</li>
-      <li> Due to a large number of private Slack inquiries, I encourage you to first read this website for commonly asked questions.</li>
-      <li> Any questions regarding course content and organization (including assignments and final project) should be posted on my Slack channel. You are strongly encouraged to answer other students' questions when you know the answer.</li>
-      <li> If there are private matters specific to you (e.g., special accommodations), please contact me directly.</li>
-      <li> If you miss a class, watch the recording and inform me <a href="https://forms.gle/Q3udU8JMUDPZ9r5aA">here</a>.</li>
-      <li> If you want to stay up to date with recent work in AI/ML, start by looking at the conferences <a href="https://nips.cc">NeurIPS</a> and <a href="https://icml.cc">ICML</a>.</li> 	    
+      <li>Graduate student status</li>
+      <li>Proficiency in Python programming, equivalent to INFO 206 A/B (including writing
+         multi-file programs of about 200+ lines of code, using functions and external libraries).</li>
+    </ul>
+
+    <b>Teachnical/Programming prerequisites:</b>
+    <ul>
+      <li>Python 3</li>
+      <li>JupyterLab/Jupyter Notebook workflows:</li>
+      <li>Git and GitHub, including: cloning repos, committing and pushing changes from the command line, managing repo. 
+        Create an account <a href="https://github.com/join">here</a>.
+      </li>
+    </ul>
+
+    <b>Textbook (required):</b>
+    <ul>
+      <li>
+        <a href="https://www.manning.com/books/build-a-large-language-model-from-scratch">
+          <em>Build a Large Language Model (From Scratch)</em>
+        </a>, Raschka S., Manning Publications, 2024 (hereafter SR)
+      </li>
+    </ul>
+
+    <b>Assignments and Final Project deliverables:</b>
+    <ul>
+      <li>Submitted via Gradescope</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-default" id="learning-outcomes">
+  <div class="panel-heading">Learning Outcomes</div>
+  <div class="panel-body">
+
+    <p><strong>Upon successful completion of this course, students will be able to:</strong></p>
+    <ul>
+      <li>
+        <b>Analyze</b> the architectural components of large language models (LLMs), including embedding representations, attention mechanisms, and Transformer blocks.
+      </li>
+      <li>
+        <b>Implement</b> generative AI systems by constructing language models from foundational components, applying fine-tuning strategies (instruction tuning, parameter-efficient fine-tuning, and reinforcement learning from human feedback), and integrating retrieval-augmented generation (RAG) pipelines and external tools using frameworks such as Hugging Face and LangChain.
+      </li>
+      <li>
+        <b>Apply</b> prompt engineering and in-context learning techniques to adapt and optimize pretrained models for diverse downstream tasks without extensive retraining.
+      </li>
+      <li>
+        <b>Design</b> end-to-end GenAI pipelines that incorporate retrieval-augmented generation, agentic reasoning, and multimodal inputs.
+      </li>
+      <li>
+        <b>Evaluate</b> generative AI systems by assessing technical performance, fairness, potential biases, and safety considerations.
+      </li>
+      <li>
+        <b>Synthesize</b> insights from current research literature to inform the development and critical assessment of GenAI applications.
+      </li>
     </ul>
 
   </div>
 </div>
 
-	
-<div class="panel panel-default">
-  <div class="panel-heading">Class Logistics</div>
-  <div class="panel-body">
-	  <a name="logistics"></a>
-	  <p> <b>Course Prerequisites</b>
-	  <ul>
-		<li><p>MIDS 1A. Fundamentals of Linear Algebra</p></li>
-		<li><p>DS 201. Research Design and Applications for Data and Analysis</p></li>
-		<li><p>DS 203. Statistics for Data Science</li>
-	  </ul>
-	  </p>
-	
-	  <p> <b> Programming Prerequisites</b>
-	  <ul>
-		<li><p>Python (v3).</p>
-		<li><p>Jupiter and JupiterLab notebooks. You can install them in your computer using <a href="https://pypi.org/project/pip/">pip</a> or <a href="https://www.anaconda.com/">Anaconda</a>. More information <a href="https://jupyter.org/install">here</a>.</p>	    
-	  	<li><p>Git(Hub), including clone/commmit/push from the command line. You can sign up for an account <a href="https://github.com/join">here.</a></p>
-		<li><p>If you have a MacOS M1, this <a href = "./macOS_M1_install/207_sh.sh">.sh script</a> will install everything for you (credit goes to one of my former students, Kevin Stallone)</p>	
-	  </ul>	 
-	
-	  <p> <b>OS</b>
-	  <ul>
-		 <li><p> Mac/Windows/Linux are all acceptable to use.</p></li>
-	  </ul>
-	  </p>
-	
-	  <p><b>(My preferred) Textbook</b>
-	  <ul>
-		<li><a href="https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1789955750">Raschka & Mirjalili, 3rd edition (RM)</a>, Python machine learning: Machine learning and deep learning with Python, scikit-learn, and TensorFlow 2.</li></li>
-	  </ul>
-	  </p>
 
-	  <p><b>Assignments</b>
-	    <ul>
-		<li>Weekly coding assignments, submitted via Gradescope (see notes below).</li> 
-	    </ul>
-	  </p>
-
-	  <p><b>Midterm exam</b>
-	    <ul>
-		<li>The exam is available in Gradescope.</li> 
-	    </ul>
-	  </p>
-
-	  <p><b>Final Project</b>
-	    <ul>
-		<li> You will present your final project in class during the final session. You are allowed to work in teams.</li>
-		<li> You will submmit your code and presentation slides via GitHub (see notes below).</li>  
-	    </ul>
-	  </p>
-   </div>
-   </div>
-
-
-<div class="panel panel-default">
+<div class="panel panel-default" id="lecture">
   <div class="panel-heading">
-    <h2 class="panel-title">Live Session Plan</h2>
+    <h2 class="panel-title">Weekly Schedule <small>(subject to change)</small></h2>
   </div>
+
   <div class="panel-body">
-    <a name="lecture"></a>
+
+    <table class="plan">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Readings</th>
+          <th>Deadlines (10:59 am PST, lecture day)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td colspan="5" class="small-section-header">Module 1: Foundations and data representations</td>
+        </tr>
+
+        <tr>
+          <td>Week 1</td>
+          <td>Jan 22</td>
+          <td>Introduction</td>
+          <td>SR, Chapter 1</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 2</td>
+          <td>Jan 26</td>
+          <td>Working with Text Data &amp; Attention Mechanisms</td>
+          <td>SR, Chapters 2–3</td>
+          <td><span style="color: green;">Assignment 1 distributed</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" class="small-section-header">Module 2: Core model architecture</td>
+        </tr>
+
+        <tr>
+          <td>Week 3</td>
+          <td>Feb 5</td>
+          <td>Implementing &amp; Pre-training a Toy GPT-Style Model</td>
+          <td>SR, Chapters 4–5</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" class="small-section-header">Module 3: Using pretrained LLMs</td>
+        </tr>
+
+        <tr>
+          <td>Week 4</td>
+          <td>Feb 12</td>
+          <td>In-Context Learning &amp; Prompt Tuning</td>
+          <td>[paper(s)]</td>
+          <td><span style="color: red;">Assignment 1 due</span><br><span style="color: green;">Assignment 2 distributed</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" class="small-section-header">Module 4: Adapting LLMs for downstream tasks</td>
+        </tr>
+
+        <tr>
+          <td>Week 5</td>
+          <td>Feb 19</td>
+          <td>Instruction Fine-Tuning</td>
+          <td>SR, Chapter 7; [paper(s)]</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 6</td>
+          <td>Feb 26</td>
+          <td>Parameter-Efficient Fine-Tuning (PEFT)</td>
+          <td>[paper(s)]</td>
+          <td>Final project proposal due</td>
+        </tr>
+
+        <tr>
+          <td>Week 7</td>
+          <td>Mar 5</td>
+          <td>Reinforcement Learning from Human Feedback (RLHF)</td>
+          <td>[paper(s)]</td>
+          <td><span style="color: red;">Assignment 2 due</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" class="small-section-header">Module 5: Beyond the foundation</td>
+        </tr>
+
+        <tr>
+          <td>Week 8</td>
+          <td>Mar 12</td>
+          <td>Retrieval-Augmented Generation (RAG)</td>
+          <td>[paper(s)]</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 9</td>
+          <td>Mar 19</td>
+          <td>Agents and Tool Use</td>
+          <td>[paper(s)]</td>
+          <td>Final project milestone due</td>
+        </tr>
+
+        <tr>
+          <td>Week 10</td>
+          <td>Apr 2</td>
+          <td>Multimodal Learning I</td>
+          <td>[paper(s)]</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 12</td>
+          <td>Apr 9</td>
+          <td>Multimodal Learning II</td>
+          <td>[paper(s)]</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 13</td>
+          <td>Apr 23</td>
+          <td>Bias, Safety, and Societal Considerations</td>
+          <td>[paper(s)]</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Week 14</td>
+          <td>Apr 30</td>
+          <td>Final Project</td>
+          <td></td>
+          <td>Final project report due <br> Final project in-class poster presentation</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<div class="panel panel-default" id="communication">
+  <div class="panel-heading">Communication Channel
+  </div>
+
+  <div class="panel-body">
     <p>
-    <hr /> 
-
-<table class="plan">
-  <tbody>
-    <tr>
-      <th>Week</th>
-      <th>Lecture</th>
-      <th>Week</th>
-      <th>Readings</th>
-      <th>Deadlines (Sunday of the week, 11:59 pm PT)</th>
-    </tr>
-  
-    <tr>
-      <td align="center" colspan="5" class="small-section-header">Supervised and Unsupervised Learning</td>
-    </tr>
-	  
-   <tr>
-	    <td>Jan 06-12</td>
-	    <td>Introduction and Framing</td>
-	    <td class="side-borders">Week 01</td> 
-	    <td class="side-borders">RM1 (pp. 1-17)</td> 
-	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834341">Assignment 0</a></td> 
-   </tr>
-	  
-
-   <tr>
-	    <td>Jan 13-19</td>
-	    <td>Linear Regression - Gradient Descent <br> Intro to TensorFlow</td>
-	    <td class="side-borders">Week 02</td>   
-	    <td class="side-borders">RM 2 (pp. 36-52), RM10 (pp. 315-345), RM13 (pp. 425-462), <a href="https://sebastianraschka.com/Articles/2014_about_feature_scaling.html">feature scaling</a>, <a href="https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf">more math (1)</a></td> 
-	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834342">Assignment 1</a></td>
-	    	    
-   </tr>
-
-   <tr>
-	    <td>Jan 20-26</td>
-	    <td>Feature Engineering</td>
-	    <td class="side-borders">Week 03</td>      
-	    <td class="side-borders">RM 4 (109-127), <a href="https://www.nature.com/articles/s41598-021-92892-8.epdf?sharing_token=XmClBG-Ang4L6rSHBdcZTNRgN0jAjWel9jnR3ZoTv0P5L7M0o_Ue2T7O6vYasC-Z-6fBkDi2rLMQFNHaxN662UHvSQ3n65X-ShzzRWOSmMjsmQYVFduLkI9F_jYWfMfSCKWSFQvjbXpePl-uDGyBk-jocsQ0dFCvpVhDvU1R__A%3D">Ilin et al. (2021)</a></td> 
-	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834344">Assignment 2</a></td> 
-	  
-   </tr>
-
-   <tr>
-	    <td>Jan 27 - Feb 2</td>
-	    <td>Logistic Regression - Binary</td>
-	    <td class="side-borders">Week 04</td>   
-	    <td class="side-borders">RM 3 (pp. 60-78), RM 6 (pp.211-219), <a href="https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf">more math (2)</a></td> 
-	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834345">Assignment 3</a><br>Group, question, and dataset for final project</td>
-	    
-   </tr>
-
-   <tr>
-	     <td>Feb 03-09</td>
-	     <td>Logistic Regression - Multiclass</td>
-	     <td class="side-borders">Week 05</td>  
-	     <td class="side-borders">RM (3, 6 (p.211-219)), <a href="https://sebastianraschka.com/faq/docs/softmax_regression.html">more intuition</a></td> 
-	     <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834346">Assignment 4</a></td>  
-	    
-   </tr>
-
-   <tr>
-	    <td>Feb 10-16</td>
-	    <td>Feedforward Neural Networks</td>
-	     <td class="side-borders">Week 06</td>  
-	    <td class="side-borders">RM (12, 13, 14), <a href="https://www.v7labs.com/blog/neural-networks-activation-functions">activation functions</a>, <a href="https://sebastianraschka.com/pdf/lecture-notes/stat453ss21/L10_regularization__slides.pdf">regularization</a></td> 
-   	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834347">Assignment 5</a></td> 
-	   
-
-   </tr>
-
-   <tr>
-	   <td>Feb 17-23</td>
-	   <td>KNN, Decision Trees, and Ensembles</td>
-	   <td class="side-borders">Week 07</td> 
-	   <td class="side-borders">RM (3, 7), <a href="https://www.mdpi.com/1424-8220/22/17/6600/htm">Psaltos et al (2022)</a></td> 
-	   <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834348">Assignment 6</a> <br> Midterm exam</td> 
-	   
-   </tr>
-
-	  
-   <tr>
-	    <td>Feb 24 - Mar 2</td>
-	    <td>Unsupervised Learning: K-Means and PCA <br> <b>Project: baseline presentation</b><br> 
-	    <td class="side-borders">Week 08</td> 
-	    <td class="side-borders">RM (11)</td> 
-	    <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834349"> Assignment 7</a> <br> Baseline presentation: slides</td> 
-
-    </tr>
-	  
-   <tr>
-	   <td>Mar 03-09</td>
-	   <td>Embeddings for Text</td>
-	   <td class="side-borders">Week 09</td> 
-	   <td class="side-borders">RM (8, 16)</td> 
-	   <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834350">Assignment 8</a> </td> 
-
-   </tr>
-
-  
-   <tr>
-	   <td>Mar 10-16</td>
-	   <td> Convolutional Neural Networks</td>
-	   <td class="side-borders">Week 10</td> 
-	   <td class="side-borders">RM (15), <a href="https://cezannec.github.io/CNN_Text_Classification/">1D CNN intuition</a>, <a href="https://arxiv.org/abs/1408.5882">Yoon Kim (2014)</a></td> 
-   	   <td> <a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834351">Assignment 9</a></td> 
-
-  </tr>
-	  
-
-   <tr>
-	   <td>Mar 17-23</td>
-	   <td>Network Architecture and Debugging ML algorithms <br></td>
-	   <td class="side-borders">Week 11</td> 
-	   <td class="side-borders"><a href="https://cs229.stanford.edu/materials/ML-advice.pdf">Andrew Ng's advice for Applying ML</a></td> 
-	   <td><a href="https://bcourses.berkeley.edu/courses/1540256/assignments/8834343">Assignment 10</a><br></td> 
-   </tr>
-
-   <tr>
-	   <td>Mar 24-30</td>
-	   <td>Spring Break <br></td>
-	   <td class="side-borders"></td> 
-	   <td class="side-borders"></td> 
-	   <td></td> 
-   </tr>
-
-
-   <tr>
-	   <td>Mar 31 - Apr 06</td>
-	   <td>Fairness in ML</td>
-	   <td class="side-borders">Week 12</td> 
-	   <td class="side-borders"><a href="https://dl.acm.org/doi/pdf/10.1145/3465416.3483305">Suresh and Guttag (2021)</a></td> 
-	   <td> </td>   
-   </tr>
-	 
-	  
-   <tr>
-	   <td>April 07-13</td>
-	   <td>Advanced Topics: RNN/LSTMs, Transformers, BERT</td>
-	   <td class="side-borders">Week 13</td> 
-	   <td class="side-borders"><a href="https://berkeley.primo.exlibrisgroup.com/permalink/01UCS_BER/1thfj9n/alma9917493264406531">Rashka et al, ch. 16 (2022)</a></td> 
-	   <td> </td>    
-   </tr>
-	  	  
-   <tr>
-	   <td>Apr 14-20</td>
-	   <td><b>Project: final presentation </b></td>
-	   <td class="side-borders">Week 14</td> 
-	   <td class="side-borders"></td> 
-	   <td>Final presentation: slides and code </td>    
-   </tr>
-
-
-  </tbody>
-</table>
-	  <p></p>Note: RM page numbers refer to the pagination in the print version of the book.</p?
-</p>
-</div>
-</div> 
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2 class="panel-title">Communication channel</h2>
-  </div>
-  <div class="panel-body">
-    <a name="lab"></a>
-    <p> We will use Slack to communicate throughout the semester. Questions/comments related to your projects (NO CODE) are strongly encouraged. 
-    <hr /> 
-
-<table class="plan">
-  <tbody>
-    <tr>
-      <th>Sections</th>
-      <th>Slack channel</th>
-    </tr>
-
-    <tr>
-      <td align="center" colspan="2" class="small-section-header"></td>
-    </tr>
-
-    <tr>	  
-      <td>6,7</td>
-      <td>#datasci-207-2025-spring_cp</td>     
-    </tr>
-  </tbody>
-</table>
-</p>
-</div>
-</div> 
-
-<div class="panel panel-default">
-  <div class="panel-heading">Midterm Exam</div>
-  <div class="panel-body">
-    <p> <b></b>How do I take the exam?</b> 
-	    <ul>
-		    <li>The exam is available in Gradescope between Feb 17, 8 a.m. PT - Feb 23, 11:59 p.m. PT. You can take it anytime in this time frame. The duration of the exam is limited to 90 minutes.</li>
-	   </ul>
+      We will use Ed Discussion as the primary communication channel throughout the semester. <br>
+      Questions and comments related to your homework and projects (excluding code) are strongly encouraged.
     </p>
-    <p> <b></b>What is the best way to prepare for the exam?</b>
-	    <ul>
-		    <li>Going over the async material, live sessions, homework, and assigned readings covered in weeks 1-6 is all you need to do. You are allowed to prepare a cheat sheet.</li>
-	   </ul>
-   </p>
-    <p> <b></b>Can I use ChatGPT?</b>
-	    <ul>
-		    <li>Any code-generating software (such as ChatGPT, Claude) is not permitted, and it will be treated as plagiarism.</li>
-	   </ul>
-    </p> 
-    <p> <b></b>How can I see my grade?</b>
-	    <ul>
-		    <li>We aim to post exam grades in bCourses one week after the deadline. </li>
-	   </ul>
-    </p>  
-    <p>	<b></b>What is the best way to access the exam solutions?</b>
-	    <ul>
-		    <li>Attend any of the OH the week after the exam grades are in; instructors will discuss midterm solutions based on your questions.</li>
-	   </ul>
-    </p>
-  
   </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">Final Project</div>
-  <div class="panel-body">
-    <p> For the final project you will form a group (at most 4 projects in total -> ~ 4 students/team). 
-	    Your group can only include members from the section in which you are enrolled. </p>
-    <p style="color: chocolate;">Grades will be calibrated by group size and individual contributions.</p>
-	    
-    <p> Do not just re-run an existing code repository; at the minimum, you must demonstrate the ability to 
-	    perform thoughtful data preprocessing and analysis (e.g., data cleaning, model training, hyperparameter selection, model evaluation).</p>
-    <p> The topic of your project is totally flexible (see also below some project ideas).</p>
-	<p> <b>Deadlines to remember</b>: 
-	<ul>
-	    <li> week 04: inform me <a href="https://docs.google.com/spreadsheets/d/1WE8Fwp-V4S2RQIxz9w64LShvvf12O6_mpJDD0MqSF5w/edit?usp=sharing">here</a>
-				       about your group, question and dataset you plan to use. </li>
-	    <li> week 08: prepare the baseline presentation of your project. You will present in class (no more than 12 min). </li>
-	    <li> week 14: prepare the final presentation of your project. You will present in class (no more than 12 min).</li>
-	</ul>
-	</p>	
-	
-	
-	<p> <b>A few project ideas (from my Summer 2022 students)</b>:
-	    <ul>
-		    <li><a href="./summer2022_projects/Julia_Bobrovskiy_Julia, Nic, Greg, Denny, Jacob _ Solar Data _ W207 Summer2022.pdf">Can we predict solar panel electricity production using equipment and weather data?</a></li>
-		    <li><a href="./summer2022_projects/Final - Pedro Chun Evan Dmitri W207 Summer2022 | Monday, 4pm PT.pdf">Predict Stock Portfolio Returns using News Headlines</a></li>
-		    <li><a href="./summer2022_projects/Naveen_Purushotham_Slides_Pneumonia_Detection_VI_KN_NP.pdf">Pneumonia Detection from Chest Xrays</a></li>
-		    <li><a href="./summer2022_projects/Sam_Rosenberg_W207_Pred_EUI_Final Presentation.pdf">Predicting Energy Usage from Publically Available Building Performance Data</a></li>
-		    <li><a href="./summer2022_projects/Ryan_Brown_w207 Final Presentation.pptx">Can we Predict What Movies will be Well Received?</a></li>
-		    <li><a href="./summer2022_projects/Richard_Robbins_w207-music-genre-FINAL-presentation.pptx">ML for Music Genre Classification </a></li>
-		    <li><a href="./summer2022_projects/Edward_Kirton_Final Presentation.pdf">Predicting Metagenome Sample Source Environment from Protein Annotations</a></li>
-		    <li><a href="./summer2022_projects/Prakash_Krishnan_Final_Presentation_CA_Wildfires_Aug_4_2022.pdf">California Wildfire Prediction</a></li>
 
-
-	</ul>
-	</p>
-
-	<p><b> Baseline presentation.</b> Your slides should include:
-	    <ul>
-		    <li> Title, Authors </li>
-		    <li> What is the question you will be working on? Why is it interesting? </li>
-		    <li> What is the data you will be using? Include data source, size of dataset, main features to be used. Please also include summary statistics of your data. </li>
-		    <li> What prediction algorithms do you plan to use? Please describe them in detail.</li>
-		    <li> How will you evaluate your results? Please describe your chosen performance metrices and/or statistical tests in detail.</li>
-	    </ul>
-        </p>
-
-	<p> <b> Final presentation. </b> Your slides should include:
-	    <ul>
-		    <li>Title, Authors </li>
-		    <li><b>(15%) Motivation:</b> Introduce your question and why the question is interesting. Explain what has been done before in this space.
-			Describe your overall plan to approach your question. Provide a summary of your results. </li>
-		    <li><b>(15%) Data:</b> Describe in detail the data that you are using, 
-			including the source(s) of the data and relevant statistics. </li>
-		    <li><b>(15%) Modeling:</b> Describe in detail the models (baseline + improvement over baseline) that you use 
- 			in your approach. </li>
-		    <li><b>(30%) Experiments:</b> Provide insight into the effect of different hyperperameter choices. Please include tables, figures, graphs to illustrate your experiments. </li>
-		   <li><b>(10%) Conclusions:</b> Summarize the key results, what has been learned, and avenues for future work. </li>
-		   <li><b>(15%) Code submission:</b> Provide link to your GitHub repo. The code should be well commented and organized.</li>
-		   <li>Contributions: Specify the contributions of each author (e.g., data processing, algorithm implementation, slides etc.).</li>
-	   </ul>
-        </p>
-
-</div>
-</div>
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">Assignments and Final Project Submission Guidelines</div>
-  <div class="panel-body">
-    <a name="project-submissions"></a>	
-	<ul>
-		<li>Part 1: Create a GitHub repo for Assignments 1-10. Upload the homework .ipynb file to Gradescope each week before the deadline.</li>
-		<li>Part 2: Create a team GitHub repo for the Final Project. This repo will contain your code as well as PowerPoint slides for the baseline and final presentations. Add me as a contributor if your repo is private (my username is corneliailin), and add the link to your repo <a href="https://docs.google.com/spreadsheets/d/1WE8Fwp-V4S2RQIxz9w64LShvvf12O6_mpJDD0MqSF5w/edit?usp=sharing">here</a>.			
-	</ul>
-
-</div>
-</div>
-
-
-<div class="panel panel-default">
+<div class="panel panel-default" id="grading">
   <div class="panel-heading">Grading</div>
   <div class="panel-body">
-    <a name="grading"></a>
-    <table class="table">      
-      <tr><td>Participation</td><td>5%</td>      
-      <tr><td>Assignments</td><td>45%</td>
-      <tr><td>Midterm</td><td>20%</td>
-      <tr><td>Final project</td><td>30%</td>
-      <p>Final grades will be determined by computing the weighted average of homework, mideterm exam, 
-	      final group project, and participation.</p>
-      <p> Baseline grading range for this course is: A for 93 or above,
-	     A- for 90 or above, B+ for 87 or above, B for 83 or above, B- for 80 or above, C+ for 77 or above, C for 73 or above,
-	     C- for 70 and above, D+ for 67 and above, D for 63 and above, D- for 60 and above, and F for 59 and below.</p>
-  </table>    
+
+    <p><strong>Your final course grade will be calculated as follows:</strong></p>
+
+    <table class="table table-striped">
+      <tr><td>Assignments</td><td>30%</td></tr>
+      <tr><td>Final Project</td><td>50%</td></tr>
+      <tr><td>Paper Reading</td><td>6%</td></tr>
+      <tr><td>Participation</td><td>14%</td></tr>
+    </table>
+
+    <p>
+      Final grades will be determined by computing the weighted average of assignments, final group project,
+      paper reading, and participation.
+    </p>
+
+    <p>
+      Grading range for this course is: A for 93 or above, A- for 90 or above, B+ for 87 or above, B for 83 or above, B- for 80 or above, C+ for 77 or above, C for 73 or above, C- for 70 and above, D+ for 67 and above, D for 63 and above, D- for 60 and above, and F for 59 and below.
+    </p>
+
   </div>
 </div>
 
 
-
-<div class="panel panel-default">
-  <div class="panel-heading">Late Policy</div>
+<div class="panel panel-default" id="assignments-project">
+  <div class="panel-heading">Assignments, Final Project, and Participation</div>
   <div class="panel-body">
-  <a name="late-policy"></a>Weekly homework assignments can be submitted up to 3 days late with a 10% (absolute) penalty per day. The lowest grade will be dropped.
+
+    <b>Assignments</b>
+    <p>
+      Students will complete two individual assignments (each worth 15% of the final grade) designed to connect
+      lecture concepts with data-driven, real-world applications. Late submissions are accepted up to three days past the deadline, with a <b>10% absolute deduction per day</b>.
+Assignments will be posted on this website and
+      submitted through Gradescope.
+    </p>
+
+    <b>Final Project</b>
+    <p>
+      The final project is designed to help you develop practical skills in building generative AI pipelines for
+      real-world applications. You will work in teams of <b>3–4 students</b>.
+    </p>
+    <p>
+      Project grades will be determined based on the proposal, milestone, final report, and poster presentation,
+      with adjustments made for group size and individual contributions. The final project accounts for <b>50%</b>
+      of the total course grade, distributed as follows:
+    </p>
+
+    <ul>
+      <li><b>5%</b>: Project proposal</li>
+      <li><b>15%</b>: Project milestone</li>
+      <li><b>20%</b>: Final report</li>
+      <li><b>10%</b>: Poster presentation</li>
+    </ul>
+
+    <p>
+      There is <b>no late policy</b> for the final project. All deliverables must be submitted on time.
+      Detailed project guidelines will be distributed at the beginning of the semester.
+    </p>
+
+    <b>Paper Reading</b>
+    <p>
+      Each team will select one recent generative AI paper (e.g., ACL, NeurIPS, or arXiv) to summarize and
+      discuss in class. Grading will be based on clarity and the ability to connect theory to practice.
+    </p>
+
+    <b>Participation</b>
+    <p>
+      Active engagement during class is essential for mastering GenAI concepts. Participation will be evaluated
+      based on contributions to discussions, questions asked, and involvement in group exercises.
+      Participation accounts for <b>1% per week</b> of the total course grade.
+    </p>
+
   </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">Equity and Inclusion</div>
+
+<div class="panel panel-default" id="ai-policy">
+  <div class="panel-heading">Use of AI Chatbots</div>
   <div class="panel-body">
-  <a name="equity-and-inclusion"></a>
-<p> Integrating a diverse set of experiences is important for a more comprehensive understanding of machine learning. 
-I will make an effort to read papers and hear from a diverse group of practitioners, still, limits exist on this diversity in the field of machine learning. 
-I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was created. 
-I would like to nurture a learning environment that supports a diversity of thoughts, perspectives and experiences, and honors your identities 
-(including race, gender, class, sexuality, religion, ability, veteran status, etc.) in the spirit of the <a href="https://diversity.berkeley.edu/principles-community">UC Berkeley Principles of Community.</a></p>
 
-<p> To help accomplish this, please contact me or submit anonymous feedback through I School channels if you have any suggestions to improve the quality of the course.
-If you have a name and/or set of pronouns that you prefer I use, please let me know. 
-If something was said in class (by anyone) or you experience anything that makes you feel uncomfortable, please talk to me about it. 
-If you feel like your performance in the class is being impacted by experiences outside of class, please don’t hesitate to come and talk with me. 
-I want to be a resource for you. Also, anonymous feedback is always an option, and may lead to me to make a general announcement to the class, if necessary, 
-to address your concerns.</p> 
-	  
-<p> As a participant in teamwork and course discussions, you should also strive to honor the diversity of your classmates.</p> 
+    <p>
+      Students may use AI chatbots (e.g., ChatGPT, Claude, Gemini, and others) to clarify concepts, debug code,
+      generate small code snippets for study or practice, or paraphrase/revise text that they originally authored.
+      Chatbot use must align with the principles of academic integrity and may not replace a student’s independent effort.
+    </p>
 
-<p> If you prefer to speak with someone outside of the course, Assistant Dean of Student Experience Shirley Salanio (shirley@ischool.berkeley.edu), Director of Admissions and Diversity Recruitment Roxanne Pifer (rpifer@ischool.berkeley.edu),
-and the UC Berkeley Office for Graduate Diversity are excellent resources. Also see the following <a href="https://www.ischool.berkeley.edu/about/community">link.</a></p>
+    <ul>
+      <li>Students may not submit large blocks of unmodified chatbot-generated code or use chatbots to complete entire problems.</li>
+      <li>Students must be able to explain all submitted code and may be asked to demonstrate understanding in follow-up assessments.</li>
+      <li>
+        When chatbots are used, students must include a comment in their code specifying the tool and the exact prompt used
+        (e.g., “I used ChatGPT for this problem with the prompt: ‘How to implement a bubble sort in Python?’”).
+      </li>
+      <li>
+        If chatbots are used to paraphrase or revise text originally written by the student, the student must explicitly
+        disclose how the tool was used.
+      </li>
+      <li>Misuse of chatbots or failure to follow this policy will result in disciplinary action as outlined in the course syllabus.</li>
+    </ul>
 
-    </div>
-</div>	
-	
-<div class="panel panel-default">
-  <div class="panel-heading">Collaboration Policy/Academic Integrity</div>
-  <div class="panel-body">
-  <a name="equity-and-inclusion"></a>
-<p> All MIDS students must be familiar with and abide by the provisions of the “Student Code of Conduct” including those provisions relating to Academic Misconduct.
-All forms of academic misconduct, including cheating, fabrication, plagiarism or facilitating academic dishonesty will not be tolerated
-(see the <a href="https://teaching.berkeley.edu/berkeley-honor-code">UC Berkeley Honor Code</a> and the <a href="https://sa.berkeley.edu/student-code-of-conduct#102.01_Academic_Misconduct">UC Berkeley Student Code of Conduct</a>).</p>
-
-<p> We encourage studying in groups of two to four people. This applies to working on homework, discussing live sessions, and studying for the mideterm exam. 
-However, students must always adhere to the UC Berkeley Code of Conduct and the UC Berkeley Honor Code. In particular, all materials that are turned in for credit or evaluation must be written solely by the submitting student or group.
-Similarly, you may consult books, publications, or online resources to help you study. In the end, you must always credit and acknowledge all consulted sources in your submission (including other persons, books, resources, etc.)</p>
-
-	</div>
+  </div>
 </div>
-	
-<div class="panel panel-default">
-  <div class="panel-heading">Use of Artificial Inteligence</div>
+
+<div class="panel panel-default" id="integrity">
+  <div class="panel-heading">Academic Integrity</div>
   <div class="panel-body">
-  <a name="equity-and-inclusion"></a>
-<p> The use of any text- and code-generating software (e.g., ChatGPT, Claude) to produce text and code for assignments, the midterm exam, or the final project
-is strictly prohibited and will be considered plagiarism. However, you may use these tools for learning, studying, and enhancing your understanding of course material.</p>
-	</div>
-</div>	
+
+    <p>
+      All students are expected to follow the UC Berkeley Code of Student Conduct. While the final project is a
+      collaborative effort, all assignments must be completed independently unless explicitly stated otherwise.
+    </p>
+
+    <p>
+      All written work must be your own. If you reference the work of others, you must clearly cite the appropriate source.
+      This applies to source code as well—if you use code from external sources (e.g., Stack Overflow, ChatGPT), you must cite its origin.
+    </p>
+
+    <p>
+      We have a zero-tolerance policy for cheating and plagiarism. Violations will be referred to the Center for Student Conduct
+      and will likely result in failing the course.
+    </p>
+
+  </div>
+</div>
+
+
+<div class="panel panel-default" id="diversity">
+  <div class="panel-heading">Diversity and Inclusion</div>
+  <div class="panel-body">
+
+    <p>
+      A broad range of perspectives enhances our collective understanding. In keeping with the UC Berkeley Principles of Community,
+      we strive to create a learning environment that respects all identities—race, gender, class, sexuality, religion, ability,
+      veteran status, and more—and values the full diversity of thought and experience.
+    </p>
+
+    <p>
+      If you have suggestions for improving the course or if something made you uncomfortable, please contact the instructors
+      or Student Affairs. If external factors affect your performance, do not hesitate to reach out—we are here to help.
+    </p>
+
+    <p>
+      As participants in discussions and teamwork, please honor the diversity of your classmates and maintain a respectful,
+      inclusive dialogue.
+    </p>
+
+  </div>
+</div>
+
+<div class="panel panel-default" id="dsp">
+  <div class="panel-heading">Disability Services &amp; Accommodations</div>
+  <div class="panel-body">
+
+    <p>
+      UC Berkeley is committed to creating a learning environment that meets the needs of its diverse student body,
+      including students with disabilities. If you anticipate or experience barriers to learning, please feel welcome
+      to discuss your concerns with the instructor.
+    </p>
+
+    <p>
+      Students may work with the Disabled Students’ Program (DSP) to request official accommodations.
+      More information is available at <a href="https://dsp.berkeley.edu" target="_blank">dsp.berkeley.edu</a>.
+    </p>
+
+    <p>
+      DSP is located at 260 César Chávez Student Center. Phone: (510) 642-0518 (voice), (510) 642-6376 (TTY),
+      Email: <a href="mailto:dsp@berkeley.edu">dsp@berkeley.edu</a>.
+    </p>
+
+  </div>
+</div>
+
+
+<div class="panel panel-default" id="wellness">
+  <div class="panel-heading">Wellness</div>
+  <div class="panel-body">
+
+    <p>
+      Do your best to maintain a healthy lifestyle this semester by eating well, exercising, getting enough sleep,
+      and taking time to recharge. Avoiding burnout will support your academic, professional, and personal goals.
+    </p>
+
+    <p>
+      If you feel overwhelmed, please be kind to yourself and reach out for support. Seeking help is a courageous step.
+      Berkeley offers a wide range of emotional, physical, safety, and academic wellbeing resources, including support
+      through the Student Learning Center and campus wellness services.
+    </p>
+
+  </div>
+</div>
+
+
+  </div> <!-- /.container -->
+
 </body>
 </html>
