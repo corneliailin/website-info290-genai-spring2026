@@ -80,7 +80,7 @@
 
         <p>
           The course also explores advanced topics such as retrieval-augmented generation (RAG), agentic reasoning systems, and multimodal learning
-          that extends beyond text to incorporate vision and other data modalities.
+          that extends beyond text to incorporate vision, audio, and other data modalities.
         </p>
 
         <p>
@@ -188,11 +188,12 @@
       <div class="panel-body">
         <p><strong>Upon successful completion of this course, students will be able to:</strong></p>
         <ul>
-          <li><em>Analyze</em> the architectural components of LLMs (embeddings, mutli-head attention, Transformer blocks).</li>
-          <li><em>Implement</em> GenAI systems [fine-tuning (instruction, RL), PEFT] and integrate RAG + tools using Hugging Face and LangChain.</li>
+          <li><em>Analyze</em> the architectural components of LLMs (embeddings, mutli-head attention, Transformer blocks) and multimodal models across text, vision, and audio.</li>
+          <li><em>Implement</em> GenAI systems [fine-tuning (instruction, RL), PEFT] and build RAG and agentic pipelines using Hugging Face and LangChain.</li>
           <li><em>Apply</em> prompt engineering and in-context learning for downstream tasks without extensive retraining.</li>
+          <li><em>Design</em>multimodal and agentic systems that reason across data modalities and interact with external tools and knowledge sources.</li>
           <li><em>Evaluate</em> GenAI systems (performance, fairness, bias, safety).</li>
-          <li><em>Synthesize</em> insights from current research literature.</li>
+          <li><em>Synthesize</em> insights from current research literature to inform system design and critical analysis.</li>
         </ul>
       </div>
     </div>
@@ -337,7 +338,7 @@
               </tr>
 
               <tr>
-                <td colspan="5" class="small-section-header">Module 5: Beyond the foundation</td>
+                <td colspan="5" class="small-section-header">Module 5: Multimodal and advanced generative systems</td>
               </tr>
               <tr>
                 <td>Week 8</td>
@@ -345,6 +346,8 @@
                 <td>Retrieval-Augmented Generation (RAG)
                   (<a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/blob/main/lectures/Week%2008_%20Retrieval-Augmented%20Generation%20(RAG).pdf">lecture</a>,
                    <a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/tree/main/studios/week08">studios</a>)
+                   <br>
+                   (from text to multimodal)
                 </td>
                 <td>
                   <a href="https://arxiv.org/pdf/2402.13178">Xiong et al. (2024)</a><br>
@@ -358,11 +361,13 @@
                 <td>Agentic AI
                   (<a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/blob/main/lectures/Week%2009_%20Agentic%20AI.pdf">lecture</a>,
                    <a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/tree/main/studios/week09">studios</a>)
+                   <br>
+                   (including Agentic RAG and reasoning)
                 </td>
                 <td>
-                  <a href="https://arxiv.org/pdf/2210.03629"></a>Yao et al. (2023)*</a>
-                  <a href="https://arxiv.org/pdf/2305.18323">Xu et al. (2023)*</a>
-                  <a href="https://arxiv.org/pdf/2408.08435">Hu et al. (2025)</a>
+                  <a href="https://arxiv.org/pdf/2210.03629">Yao et al. (2023)*</a><br>
+                  <a href="https://arxiv.org/pdf/2305.18323">Xu et al. (2023)*</a><br>
+                  <a href="https://arxiv.org/pdf/2408.08435">Hu et al. (2025)</a><br>
                   <a href="https://arxiv.org/abs/2302.04761">Schick et al. (2023)</a><br>
                   <a href="https://arxiv.org/abs/2303.11366">Shinn et al. (2023)</a>
                 </td>
@@ -378,28 +383,47 @@
               <tr>
                 <td>Week 10</td>
                 <td>Apr 2</td>
-                <td>Multimodal Learning I</td>
+                <td>Multimodal Learning I
+                  (<a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/blob/main/lectures/Week%2010_%20Multumodal%20Learning%20I.pdf">lecture</a>,
+                   <a href="https://github.com/corneliapaulik/student-info290-genai-spring2026/tree/main/studios/week10">studios</a>)
+                   <br>
+                  <br>
+                  (how LLMs "see")
+                </td>
                 <td>[paper(s)]</td>
                 <td>Final project milestone due</td>
               </tr>
               <tr>
                 <td>Week 11</td>
                 <td>Apr 9</td>
-                <td>Multimodal Learning II</td>
+                <td>Multimodal Learning II
+                  (lecture,
+                   studios)
+                  <br>
+                  (how LLMs "hear")
+                </td>
                 <td>[paper(s)]</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Week 12</td>
                 <td>Apr 16</td>
-                <td>Multimodal Learning III</td>
+                <td>Multimodal Learning III
+                  (lecture,
+                   studios)
+                  <br>
+                  (understanding, generation, and any-to-any with reasoning)
+                </td>
                 <td>[paper(s)]</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Week 13</td>
                 <td>Apr 23</td>
-                <td>Bias, Safety, and Societal Considerations</td>
+                <td>Bias, Safety, and Societal Considerations
+                  (lecture,
+                   studios)
+                </td>
                 <td>[paper(s)]</td>
                 <td></td>
               </tr>
@@ -575,13 +599,13 @@
 
     <p>
       A broad range of perspectives enhances our collective understanding. In keeping with the UC Berkeley Principles of Community,
-      we strive to create a learning environment that respects all identities—race, gender, class, sexuality, religion, ability,
-      veteran status, and more—and values the full diversity of thought and experience.
+      we strive to create a learning environment that respects all identities (race, gender, class, sexuality, religion, ability,
+      veteran status, and more), and values the full diversity of thought and experience.
     </p>
 
     <p>
       If you have suggestions for improving the course or if something made you uncomfortable, please contact the instructors
-      or Student Affairs. If external factors affect your performance, do not hesitate to reach out—we are here to help.
+      or Student Affairs. If external factors affect your performance, do not hesitate to reach out, we are here to help.
     </p>
 
     <p>
